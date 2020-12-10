@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Inebe.ge</title>
+</head>
+<body>
+        <div id="body" class="col-12">
+            <ul>
+                <li><a href="source.html"><img src="images/inebe_logo.png"></a></li>
+                <li><a href="drink.html">სასმელი</a></li>
+                <li><a href="aboutUs.html">ჩვენს შესახებ</a></li>
+                <li><a href="users.html">მომხმარებელი</a></li>
+            </ul>
+            <div id="form">
+                <form>
+                    <h2>დაინტერესებული ხართ ჯანსაღი კვებით?</h2>
+                    <br>
+                    მოგვწერეთ საკონტაქტო ინფორმაცია და დაგიკავშირდებით
+                    <br>
+                    სახელი: <input type="text" placeholder="სახელი" id="userName">
+                    <br>
+                    საკონტაქტო ნომერი: <input type="tel" placeholder="ტელეფონის ნომერი">
+                    <br>
+                    <br>
+                    <i>როგორ მიიღეთ ინფორმაცია ჩვენი პროდუქციის შესახებ?</i>
+                    <br>
+                    <select name="inform">
+                        <option value="facebook">Facebook გვერდიდან</option>
+                        <option value="instagram">Instagram გვერდიდან</option>
+                        <option value="fromuser">ჩვენი მომხმარებლისგან</option>
+                    </select>
+                    <br>
+                    <textarea rows="8" cols="60"></textarea>
+                    <br>
+                    <input class="btn" type="submit">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <ul id="footerul">
+                <li><a href="users.html">მომხმარებლის აზრი</a></li>
+                <li>კონტაქტი:</li>
+                <li><a href="https://www.facebook.com/inebe.ge/"><img src="images/facebook.png"></a></li>
+                <li><a href="https://www.instagram.com/inebe.ge/"><img src="images/instagram.png"></a></li>
+            </ul>
+        </footer>
+        <script>
+            $(".btn").click(function(){
+                alert("მოგესალმებით "+ $("#userName").val()+", ჩვენი ოპერატორი მალე დაგიკავშირდებათ :)")
+
+            })
+        </script>
+</body>
+</html>

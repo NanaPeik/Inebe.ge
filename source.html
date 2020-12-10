@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Inebe.ge</title>
+</head>
+<body>
+    <div class="firstdiv">
+        <div id="showforMobile">
+            <button id="slidebutton">შესახებ</button>
+            <ul id="text">
+                <li><a href="drink.html">სასმელი</a></li>
+                <li><a href="aboutUs.html">ჩვენს შესახებ</a></li>
+                <li><a href="advises.html">შემოგვიერთდით</a></li>
+            </ul>
+            <img src="images/inebe_logo.png">
+        </div>
+        
+        <ul id="panel">
+            <li><a href="source.html"><img src="images/inebe_logo.png"></a></li>
+            <li><a href="drink.html" id="drink"></a></li>
+            <li><a href="aboutUs.html" id="aboutus"></a></li>
+            <li><a href="advises.html" id="advises"></a></li>
+        </ul>
+        <h1>ჯანსაღი კვება <span>ყოველდღე</span></h1>
+        <button><a href="advises.html">შემოგვიერთდით</a></button>
+    </div>
+    <footer>
+        <ul id="footerul">
+            <li><a href="users.html">მომხმარებლის აზრი</a></li>
+            <li>კონტაქტი:</li>
+            <li><a href="https://www.facebook.com/inebe.ge/"><img src="images/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/inebe.ge/"><img src="images/instagram.png"></a></li>
+        </ul>
+    </footer>
+    <script>
+        // $("#slidebutton").click(function(){
+        //         $("#test").show();
+        //     });
+            var headerinfo=['სასმელი','ჩვენს შესახებ','შემოგვიერთდით']
+            $("#drink").text(headerinfo[0])
+            $("#aboutus").text(headerinfo[1])
+            $("#advises").text(headerinfo[2])
+    </script>
+</body>
+</html>
